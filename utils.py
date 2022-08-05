@@ -14,7 +14,7 @@ def _get_test_input_info(filename) -> tuple[int, list[int]]:
     return (w, itens)
 
 
-def get_problem_info(problem: str) -> tuple[int, int, list[int]]:
+def get_problem_info(problem: str) -> tuple[int, int, list[int]]:  # type: ignore
     with open("optimal-solution/solutions.csv") as f:
         text = f.read()
 
